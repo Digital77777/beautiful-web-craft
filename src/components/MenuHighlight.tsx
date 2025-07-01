@@ -5,32 +5,46 @@ import { Card, CardContent } from "@/components/ui/card";
 export const MenuHighlight = () => {
   const menuItems = [
     {
-      name: "Flame-Grilled Wagyu",
-      description: "Premium wagyu beef, fire-kissed to perfection",
-      price: "$65",
-      category: "fire",
-      image: "🔥"
-    },
-    {
-      name: "Arctic Seafood Platter",
-      description: "Fresh oysters, lobster, and prawns on ice",
-      price: "$45",
-      category: "ice",
-      image: "🧊"
-    },
-    {
-      name: "Molten Chocolate Lava",
-      description: "Warm chocolate cake with vanilla ice cream",
+      name: "Fire Whiskey Collection",
+      description: "Premium aged whiskeys and bourbon with smoky notes",
       price: "$18",
       category: "fire",
-      image: "🔥"
+      image: "🥃"
     },
     {
       name: "Frozen Cocktail Collection",
       description: "Artisanal frozen margaritas and daiquiris",
       price: "$15",
       category: "ice",
-      image: "🧊"
+      image: "🍹"
+    },
+    {
+      name: "Premium Shisha Flavors",
+      description: "Exotic fruit and mint blends for the perfect smoke",
+      price: "$25",
+      category: "fire",
+      image: "💨"
+    },
+    {
+      name: "Ice-Cold Beer Selection",
+      description: "Craft beers and imported lagers served ice cold",
+      price: "$8",
+      category: "ice",
+      image: "🍺"
+    },
+    {
+      name: "Flaming Shots",
+      description: "Spectacular flaming shots and fire cocktails",
+      price: "$12",
+      category: "fire",
+      image: "🔥"
+    },
+    {
+      name: "Hookah Lounge Experience",
+      description: "Traditional and modern shisha with comfortable seating",
+      price: "$35",
+      category: "fire",
+      image: "🪔"
     }
   ];
 
@@ -41,15 +55,15 @@ export const MenuHighlight = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="text-white">Our </span>
             <span className="bg-gradient-to-r from-orange-400 to-blue-400 bg-clip-text text-transparent">
-              Signature Menu
+              Drinks & Shisha Menu
             </span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Experience the perfect balance of hot and cold, fire and ice, in every carefully crafted dish and drink.
+            Experience the perfect balance of hot and cold, fire and ice, in every carefully crafted drink and premium shisha blend.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {menuItems.map((item, index) => (
             <Card key={index} className="bg-black/40 backdrop-blur-md border border-white/10 hover:border-white/30 transition-all duration-300 group">
               <CardContent className="p-6">
