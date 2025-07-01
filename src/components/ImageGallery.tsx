@@ -4,29 +4,24 @@ import { Card, CardContent } from "@/components/ui/card";
 export const ImageGallery = () => {
   const galleryImages = [
     {
-      src: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=800&h=600&fit=crop",
-      alt: "Luxurious lounge seating area with comfortable couches",
-      title: "Comfortable Lounge"
+      src: "/lovable-uploads/64f839c1-a721-420e-a497-f8a4cd093716.png",
+      alt: "Luxurious lounge seating with purple ambient lighting and shisha setup",
+      title: "VIP Lounge Experience"
     },
     {
-      src: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=800&h=600&fit=crop",
-      alt: "Premium drinks and cocktails served",
-      title: "Premium Beverages"
+      src: "/lovable-uploads/e262150f-6810-4f9f-b1e8-764019c33b8b.png",
+      alt: "Elegant seating area with premium lighting and comfortable atmosphere",
+      title: "Premium Seating"
     },
     {
-      src: "https://images.unsplash.com/photo-1582562124811-c09040d0a901?w=800&h=600&fit=crop",
-      alt: "Cozy and relaxing atmosphere",
-      title: "Relaxing Ambiance"
+      src: "/lovable-uploads/ff7bb46a-3682-4493-9e6f-9dd96c7ee1f4.png",
+      alt: "R Palace neon sign with sophisticated lounge interior and shisha table",
+      title: "R Palace Ambiance"
     },
     {
-      src: "https://images.unsplash.com/photo-1500673922987-e212871fec22?w=800&h=600&fit=crop",
-      alt: "Scenic views from the lounge",
-      title: "Beautiful Views"
-    },
-    {
-      src: "https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?w=800&h=600&fit=crop",
-      alt: "Evening atmosphere with ambient lighting",
-      title: "Evening Vibes"
+      src: "/lovable-uploads/f9447446-c90a-40e3-af1a-b6d4ade4a2c8.png",
+      alt: "Premium bar display with extensive collection of spirits and wines",
+      title: "Premium Bar Selection"
     }
   ];
 
@@ -45,7 +40,7 @@ export const ImageGallery = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6 mb-12">
           {galleryImages.map((image, index) => (
             <Card key={index} className="bg-black/40 backdrop-blur-md border border-white/10 hover:border-white/30 transition-all duration-300 group overflow-hidden">
               <CardContent className="p-0">
@@ -53,7 +48,7 @@ export const ImageGallery = () => {
                   <img 
                     src={image.src} 
                     alt={image.alt}
-                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                    className="w-full h-80 object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
