@@ -5,6 +5,16 @@ import { Calendar, MapPin } from "lucide-react";
 export const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img 
+          src="https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=1920&h=1080&fit=crop" 
+          alt="Lounge Interior"
+          className="w-full h-full object-cover opacity-20"
+        />
+        <div className="absolute inset-0 bg-black/70"></div>
+      </div>
+
       {/* Animated Background */}
       <div className="absolute inset-0">
         <div className="absolute left-0 top-0 w-1/2 h-full bg-gradient-to-br from-orange-600/30 via-red-600/20 to-transparent animate-pulse"></div>

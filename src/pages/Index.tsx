@@ -5,6 +5,7 @@ import { EventsSection } from "@/components/EventsSection";
 import { AboutSection } from "@/components/AboutSection";
 import { MenuHighlight } from "@/components/MenuHighlight";
 import { ContactSection } from "@/components/ContactSection";
+import { ImageGallery } from "@/components/ImageGallery";
 
 const Index = () => {
   return (
@@ -12,6 +13,7 @@ const Index = () => {
       <Navigation />
       <Hero />
       <AboutSection />
+      <ImageGallery />
       <MenuHighlight />
       <EventsSection />
       <ContactSection />
