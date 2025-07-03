@@ -19,6 +19,20 @@ export const MenuHighlight = () => {
       image: "🍹"
     },
     {
+      name: "Grilled Steak Platter",
+      description: "Premium ribeye steak with roasted vegetables and herb butter",
+      price: "$32",
+      category: "fire",
+      image: "🥩"
+    },
+    {
+      name: "Fresh Seafood Tower",
+      description: "Chilled oysters, shrimp, and lobster with cocktail sauce",
+      price: "$45",
+      category: "ice",
+      image: "🦞"
+    },
+    {
       name: "Premium Shisha Flavors",
       description: "Exotic fruit and mint blends for the perfect smoke",
       price: "$25",
@@ -33,18 +47,25 @@ export const MenuHighlight = () => {
       image: "🍺"
     },
     {
+      name: "Wood-Fired Pizza",
+      description: "Artisanal pizza with fresh mozzarella and premium toppings",
+      price: "$22",
+      category: "fire",
+      image: "🍕"
+    },
+    {
+      name: "Chilled Gazpacho",
+      description: "Refreshing cold soup with fresh vegetables and herbs",
+      price: "$14",
+      category: "ice",
+      image: "🥣"
+    },
+    {
       name: "Flaming Shots",
       description: "Spectacular flaming shots and fire cocktails",
       price: "$12",
       category: "fire",
       image: "🔥"
-    },
-    {
-      name: "Hookah Lounge Experience",
-      description: "Traditional and modern shisha with comfortable seating",
-      price: "$35",
-      category: "fire",
-      image: "🪔"
     }
   ];
 
@@ -55,11 +76,11 @@ export const MenuHighlight = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="text-white">Our </span>
             <span className="bg-gradient-to-r from-orange-400 to-blue-400 bg-clip-text text-transparent">
-              Drinks & Shisha Menu
+              Menu & Experience
             </span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Experience the perfect balance of hot and cold, fire and ice, in every carefully crafted drink and premium shisha blend.
+            Experience the perfect balance of hot and cold, fire and ice, in every carefully crafted dish, drink, and premium shisha blend.
           </p>
         </div>
 
