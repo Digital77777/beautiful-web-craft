@@ -1,17 +1,10 @@
-
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin } from "lucide-react";
-
 export const Hero = () => {
-  return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <img 
-          src="https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=1920&h=1080&fit=crop" 
-          alt="Lounge Interior"
-          className="w-full h-full object-cover opacity-20"
-        />
+        <img src="https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=1920&h=1080&fit=crop" alt="Lounge Interior" className="w-full h-full object-cover opacity-20" />
         <div className="absolute inset-0 bg-black/70"></div>
       </div>
 
@@ -26,13 +19,7 @@ export const Hero = () => {
       <div className="relative z-10 text-center max-w-6xl mx-auto px-4">
         {/* Logo */}
         <div className="mb-8">
-          <div className="w-24 h-24 mx-auto rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center mb-6">
-            <div className="flex space-x-1">
-              <div className="w-2 h-8 bg-white rounded"></div>
-              <div className="w-2 h-6 bg-white rounded mt-1"></div>
-              <div className="w-2 h-8 bg-white rounded"></div>
-            </div>
-          </div>
+          
           <h1 className="text-2xl md:text-3xl font-light tracking-wider text-white mb-2">
             The Retrouvaille
           </h1>
@@ -99,6 +86,5 @@ export const Hero = () => {
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
         <div className="text-white/50 text-2xl">🔥🔥🔥</div>
       </div>
-    </section>
-  );
+    </section>;
 };
