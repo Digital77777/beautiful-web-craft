@@ -1,5 +1,5 @@
-
 import { MapPin, Phone, Clock } from "lucide-react";
+import Map from "./Map";
 
 export const ContactSection = () => {
   return (
@@ -51,17 +51,9 @@ export const ContactSection = () => {
             </div>
           </div>
 
-          {/* Map Placeholder */}
-          <div className="bg-gradient-to-br from-orange-500/20 to-blue-500/20 rounded-2xl p-8 backdrop-blur-md border border-white/10 flex items-center justify-center min-h-[400px]">
-            <div className="text-center">
-              <MapPin className="w-16 h-16 text-white/50 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold text-white mb-2">
-                Interactive Map
-              </h3>
-              <p className="text-gray-300">
-                Click here to view detailed directions to our restaurant
-              </p>
-            </div>
+          {/* Interactive Map */}
+          <div className="bg-gradient-to-br from-orange-500/20 to-blue-500/20 rounded-2xl p-4 backdrop-blur-md border border-white/10">
+            <Map />
           </div>
         </div>
 
