@@ -13,19 +13,19 @@ export const EventsSection = () => {
       category: "weekly"
     },
     {
-      title: "Weekend Fire Show",
+      title: "Saturday Entertainment Night",
       day: "Saturday",
-      time: "9:00 PM",
-      description: "Live cooking demonstrations with our master chefs",
-      highlight: "Interactive Experience",
+      time: "8:00 PM - Late",
+      description: "Live DJ sets, premium entertainment, and spectacular performances",
+      highlight: "Live Entertainment & DJ Sets",
       category: "weekend"
     },
     {
-      title: "Ice Cocktail Masterclass",
+      title: "Sunday Vibes",
       day: "Sunday",
-      time: "3:00 PM",
-      description: "Learn to craft the perfect frozen cocktails",
-      highlight: "Hands-on Learning",
+      time: "6:00 PM - Late",
+      description: "Chill entertainment with live music and relaxed atmosphere",
+      highlight: "Live Music & Entertainment",
       category: "weekend"
     }
   ];
@@ -52,7 +52,7 @@ export const EventsSection = () => {
                       ? 'bg-orange-500/20 text-orange-400' 
                       : 'bg-blue-500/20 text-blue-400'
                   }`}>
-                    {event.category === 'weekly' ? 'Weekly Event' : 'Weekend Special'}
+                    {event.category === 'weekly' ? 'Weekly Event' : 'Weekend Entertainment'}
                   </span>
                 </div>
 
