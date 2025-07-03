@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -7,63 +6,63 @@ export const MenuHighlight = () => {
     {
       name: "Fire Whiskey Collection",
       description: "Premium aged whiskeys and bourbon with smoky notes",
-      price: "$18",
+      price: "R320",
       category: "fire",
       image: "🥃"
     },
     {
       name: "Frozen Cocktail Collection",
       description: "Artisanal frozen margaritas and daiquiris",
-      price: "$15",
+      price: "R265",
       category: "ice",
       image: "🍹"
     },
     {
       name: "Grilled Steak Platter",
       description: "Premium ribeye steak with roasted vegetables and herb butter",
-      price: "$32",
+      price: "R565",
       category: "fire",
       image: "🥩"
     },
     {
       name: "Fresh Seafood Tower",
       description: "Chilled oysters, shrimp, and lobster with cocktail sauce",
-      price: "$45",
+      price: "R795",
       category: "ice",
       image: "🦞"
     },
     {
       name: "Premium Shisha Flavors",
       description: "Exotic fruit and mint blends for the perfect smoke",
-      price: "$25",
+      price: "R440",
       category: "fire",
       image: "💨"
     },
     {
       name: "Ice-Cold Beer Selection",
       description: "Craft beers and imported lagers served ice cold",
-      price: "$8",
+      price: "R140",
       category: "ice",
       image: "🍺"
     },
     {
       name: "Wood-Fired Pizza",
       description: "Artisanal pizza with fresh mozzarella and premium toppings",
-      price: "$22",
+      price: "R390",
       category: "fire",
       image: "🍕"
     },
     {
       name: "Chilled Gazpacho",
       description: "Refreshing cold soup with fresh vegetables and herbs",
-      price: "$14",
+      price: "R245",
       category: "ice",
       image: "🥣"
     },
     {
       name: "Flaming Shots",
       description: "Spectacular flaming shots and fire cocktails",
-      price: "$12",
+      price: "R210",
       category: "fire",
       image: "🔥"
     }
