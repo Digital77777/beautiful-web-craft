@@ -1,7 +1,10 @@
+
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin } from "lucide-react";
+
 export const Hero = () => {
-  return <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return (
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img src="https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=1920&h=1080&fit=crop" alt="Lounge Interior" className="w-full h-full object-cover opacity-20" />
@@ -19,7 +22,13 @@ export const Hero = () => {
       <div className="relative z-10 text-center max-w-6xl mx-auto px-4">
         {/* Logo */}
         <div className="mb-8">
-          
+          <div className="flex justify-center mb-6">
+            <img 
+              src="/lovable-uploads/34a89008-c864-4b5f-a3f3-a4a19a0b4171.png" 
+              alt="The Retrouvaille Logo" 
+              className="w-24 h-24 md:w-32 md:h-32 object-contain"
+            />
+          </div>
           <h1 className="text-2xl md:text-3xl font-light tracking-wider text-white mb-2">
             The Retrouvaille
           </h1>
@@ -86,5 +95,6 @@ export const Hero = () => {
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
         <div className="text-white/50 text-2xl">🔥🔥🔥</div>
       </div>
-    </section>;
+    </section>
+  );
 };
