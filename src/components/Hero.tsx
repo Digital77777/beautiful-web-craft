@@ -3,6 +3,13 @@ import { Button } from "@/components/ui/button";
 import { Calendar, MapPin } from "lucide-react";
 
 export const Hero = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -80,11 +87,18 @@ export const Hero = () => {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-8 py-3 text-lg">
+          <Button 
+            onClick={() => scrollToSection('booking')}
+            className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-8 py-3 text-lg"
+          >
             <Calendar className="mr-2 w-5 h-5" />
             Book Your Table
           </Button>
-          <Button variant="outline" className="border-white/30 text-white px-8 py-3 text-lg bg-blue-500 hover:bg-blue-400">
+          <Button 
+            onClick={() => scrollToSection('contact')}
+            variant="outline" 
+            className="border-white/30 text-white px-8 py-3 text-lg bg-blue-500 hover:bg-blue-400"
+          >
             <MapPin className="mr-2 w-5 h-5" />
             View Location
           </Button>

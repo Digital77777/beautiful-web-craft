@@ -4,6 +4,7 @@ import { Navigation } from "@/components/Navigation";
 import { EventsSection } from "@/components/EventsSection";
 import { AboutSection } from "@/components/AboutSection";
 import { MenuHighlight } from "@/components/MenuHighlight";
+import { BookingSection } from "@/components/BookingSection";
 import { ContactSection } from "@/components/ContactSection";
 import { ImageGallery } from "@/components/ImageGallery";
 
@@ -15,6 +16,7 @@ const Index = () => {
       <AboutSection />
       <ImageGallery />
       <MenuHighlight />
+      <BookingSection />
       <EventsSection />
       <ContactSection />
     </div>

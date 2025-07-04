@@ -1,8 +1,14 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 export const MenuHighlight = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const menuItems = [
     // Food Items
     {
@@ -183,7 +189,10 @@ export const MenuHighlight = () => {
         </div>
 
         <div className="text-center">
-          <Button className="bg-gradient-to-r from-orange-500 to-blue-500 hover:from-orange-600 hover:to-blue-600 text-white px-8 py-3 text-lg">
+          <Button 
+            onClick={() => scrollToSection('contact')}
+            className="bg-gradient-to-r from-orange-500 to-blue-500 hover:from-orange-600 hover:to-blue-600 text-white px-8 py-3 text-lg"
+          >
             View Full Menu
           </Button>
         </div>
